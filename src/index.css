@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: #3E2412;
+    background-color: #120B08;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Pixel and Retro Handcrafted Game Utilities */
+.font-pixel-title {
+  font-family: 'ZCOOL KuaiLe', 'DotGothic16', cursive, sans-serif;
+}
+
+.font-pixel-num {
+  font-family: 'DotGothic16', monospace, -apple-system, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Stardew & Retro Wood Panel Frame */
+.pixel-wood-frame {
+  background: #E8D3B4;
+  border: 3px solid #3E2412;
+  box-shadow: 
+    inset 0 2px 0 0 #FFF2DA,
+    inset 0 -2px 0 0 #B99871,
+    0 4px 0 0 #201107;
+}
+
+.pixel-wood-card {
+  background: #F7EAD0;
+  border: 2px solid #5C3A21;
+  box-shadow: 
+    inset 0 1px 0 0 #FFFBF0,
+    inset 0 -1px 0 0 #D4B991,
+    0 2px 0 0 #2A170A;
+}
+
+.pixel-dark-card {
+  background: #2D1A10;
+  border: 2px solid #5C3822;
+  box-shadow: 
+    inset 0 1px 0 0 #482C1C,
+    0 2px 0 0 #150B05;
+}
+
+.pixel-btn-primary {
+  background: linear-gradient(180deg, #FF7A30 0%, #E64A19 100%);
+  border: 2px solid #3E2412;
+  box-shadow: 
+    inset 0 2px 0 0 #FFA670,
+    inset 0 -2px 0 0 #BF360C,
+    0 3px 0 0 #241107;
+  color: #FFF;
+  transition: all 0.08s ease-in-out;
+}
+
+.pixel-btn-primary:active {
+  transform: translateY(2px);
+  box-shadow: 
+    inset 0 1px 0 0 #FFA670,
+    inset 0 -1px 0 0 #BF360C,
+    0 1px 0 0 #241107;
+}
+
+.pixel-btn-secondary {
+  background: linear-gradient(180deg, #F3DEB8 0%, #D4BA8C 100%);
+  border: 2px solid #4A2E19;
+  box-shadow: 
+    inset 0 2px 0 0 #FFF5E2,
+    inset 0 -2px 0 0 #B09163,
+    0 3px 0 0 #241107;
+  color: #4A2E19;
+  transition: all 0.08s ease-in-out;
+}
+
+.pixel-btn-secondary:active {
+  transform: translateY(2px);
+  box-shadow: 
+    inset 0 1px 0 0 #FFF5E2,
+    0 1px 0 0 #241107;
+}
+
+.pixel-btn-tier-active {
+  background: linear-gradient(180deg, #E64A19 0%, #BF360C 100%);
+  border: 2px solid #FFD54F;
+  box-shadow: 
+    inset 0 1px 0 0 #FF8A65,
+    0 2px 0 0 #3E2412;
+  color: #FFFDE7;
+}
+
+.pixel-btn-tier-inactive {
+  background: #3E2619;
+  border: 2px solid #603D29;
+  box-shadow: inset 0 1px 0 0 #543422;
+  color: #D7CCC8;
+}
+
+/* Subtle Wood Grain Pattern */
+.bg-wood-pattern {
+  background-color: #EFE2C9;
+  background-image: radial-gradient(#DECCA8 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+/* Flashing Fire Pulse Animation */
+@keyframes flame-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(255, 120, 0, 0.6));
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 14px rgba(255, 80, 0, 0.95));
+    transform: scale(1.04);
+  }
+}
+
+.animate-flame {
+  animation: flame-pulse 1.6s ease-in-out infinite;
+}
+
+/* Marquee for Announcement */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee-smooth {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 16s linear infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #2E1B11;
+}
+::-webkit-scrollbar-thumb {
+  background: #84532B;
+  border-radius: 3px;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "神秘料理锅",
+  "description": "手机端竖屏概率玩法高保真UI原型图《神秘料理锅》，融合星露谷物语、千禧像素与中华小当家风韵。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
